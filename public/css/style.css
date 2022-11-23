@@ -135,6 +135,22 @@ main section h1{
     position: relative;
 }
 
+.ultima-visita {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.Ofertas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
 article.products {
     position: relative;
     max-height: 500px;
@@ -175,7 +191,7 @@ main section article i{
     padding: 5px;
     width: 30px;
     height: 30px;
-    border: 1px solid var(--verde);
+    border: 1px solid #39b54a;
     background-color: #FFF;
     border-radius: 50%;
     position: absolute;
@@ -356,7 +372,7 @@ button:active {
                 inset -4px -4px 12px #ffffff;
 }
 
-@media (min-width: 426px) {
+@media (min-width: 410px) {
 
     div.top-header{
         display: flex;
