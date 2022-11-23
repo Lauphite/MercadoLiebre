@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap%27');
+
+:root {
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --grisoscuro: #666;
+    --grisclaro: #ebebeb;
+    --verde: #39b54a;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+} 
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    background-color: var(--grisclaro);
+    margin: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa, .fas {
+    font-weight: 900;
+}
+
+.fa, .fas, .fab, .fal, .far, .fad {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+header {
+    background-color: var(--amarillo);
+}
+
+nav.top-header{
+    padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header div.logo{
+    padding: 10px;
+    width: 50%;
+    max-width: 250px;
+}
+
+form.form-buscar {
+    display: block;
+    width: 100vw;
+    padding: 10px;
+    max-width: 250px;
+}
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+header .form-buscar div.lupa{
+    display: inline-block;
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 18px;
+    height: 18px;
+}
+
+header .form-buscar input.barra-busqueda{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: var(--grisoscuro);
+    padding: 2px;
+    width: 80%;
+    max-width: 200px;
+}
+
+.links-nav {
+    font-size: 14px;
+    display: none;
+}
+
+.links-nav ul {
+    list-style: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+div.burger-menu {
+    text-align: center;
+}
+
+div.burger-menu i{
+    background-color: var(--celeste);
+    font-size: 20px;
+    border-radius: 5px;
+    color: #FFF;
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+    margin: 10px 0px 20px 0px;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section h1{
+    margin: 20px 0px;
+}
+
+.main-articulos {
+    position: relative;
+}
+
+article.products {
+    position: relative;
+    max-height: 500px;
+}
+
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
+}
+
+main section article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article i,
+.descuento{
+    color: #39b54a;
+}
+
+article div.main-articulos{
+    width: 100%;
+    border-top: 1px solid var(--grisclaro);
+    padding: 15px;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--verde);
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+}
+
+.precio{
+    font-size: 18px;
+}
+
+.descuento,
+.descripcion{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.descripcion{
+    display: block;
+    margin-top: 20px;
+    visibility: hidden;
+}
+
+.products:hover .descripcion{
+    visibility: visible;
+}
+
+.products:hover i.fas.fa-truck{
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transition: all 1.5s;
+    -webkit-transition: all 1.5s;
+    -moz-transition: all 1.5s;
+    -ms-transition: all 1.5s;
+    -o-transition: all 1.5s;
+}
+
+.main-footer {
+    background-color: #ffffff;
+    padding: 20px 0;
+    margin-top: 80px;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer i {
+    color: var(--light-blue);
+    font-size: 2em;
+    padding: 10px 0;
+}
+
+.footer h2 {
+    color: var(--grisoscuro);
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.footer p {
+    color: var(--grisoscuro);
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.Copyright {
+    border-top: 1px solid var(--light-gray);
+    background-color: #ffffff;
+}
+
+.Copyright p {
+    margin: 0;
+    color: var(--gray);
+    padding: 15px 0;
+}
+
+.login h1 {
+    text-align: center;
+    font-weight: 700;
+    margin: 0;
+    height: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid;
+    font-size: 30px;
+}
+
+.register h1 {
+    text-align: center;
+    font-weight: 700;
+    margin: 0;
+    height: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid;
+    font-size: 30px;
+}
+
+form.form-login {
+    background: var(--amarillo);
+    padding: 40px 0;
+    box-shadow: 7px 13px 37px #000;
+    border-radius: 10px;
+    border-top: 4px solid var(--celeste);
+    margin-top: 40px;
+    margin-bottom: 10px;
+    padding: 20px 35px;
+    width: 25%;
+    justify-content: center;
+    color: var(--white);
+}
+
+form.form-register {
+    background: var(--amarillo);
+    padding: 40px 0;
+    box-shadow: 7px 13px 37px #000;
+    border-radius: 10px;
+    border-top: 4px solid var(--celeste);
+    margin-top: 40px;
+    margin-left: 37.5%;
+    margin-bottom: 10px;
+    padding: 20px 35px;
+    width: 25%;
+    justify-content: center;
+    color: var(--white);
+}
+
+.login .boton-login:hover {
+    background-color: #090a0e;
+}
+
+.group-login {
+    margin: 15px;
+    width: 100%;
+}
+
+main.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+button {
+    color: #090909;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6em 1.5em;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 111px;
+    border-radius: 0.7em;
+    background: var(--grisoscuro);
+    border: 1px solid #090909;
+}
+
+button.login {
+    color: #090909;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6em 1.5em;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 0.7em;
+    background: var(--grisoscuro);
+    border: 1px solid #090909;
+}
+
+button:active {
+    color: var(--celeste);
+    -webkit-box-shadow: inset 4px 4px 12px #c5c5c5,
+                inset -4px -4px 12px #ffffff;
+            box-shadow: inset 4px 4px 12px #c5c5c5,
+                inset -4px -4px 12px #ffffff;
+}
+
+@media (min-width: 426px) {
+
+    div.top-header{
+        display: flex;
+        width: 100vw;
+        justify-content: space-around;   
+    }
+    
+    div.logo{
+        display: flex;
+        width: 23%;
+        max-height: 279px;
+    }
+
+    .form-buscar {
+        height: min-content;
+        margin-top: 16px;
+        display: flex;
+        width: 33%;
+        margin-left: 50px;
+    }
+
+    header div.top-header p{
+        display: flex;
+        width: 43%;
+        margin-left: 50px;
+        margin-top: 30px;
+    }
+
+    nav.links-nav {
+        display: flex;
+        padding: 0px 0px 10px 0px;
+        justify-content: space-around;
+    }
+
+    nav.links-nav .links-nav-d {
+        display: flex;
+        width: 50%;
+        justify-content: flex-end;
+        margin-right: 5%;
+        flex-wrap: wrap;
+    }
+
+    nav.links-nav .links-nav-i {
+        display: flex;
+        width: 50%;
+        justify-content: flex-start;
+        margin-left: 5%;
+        flex-wrap: wrap;
+    }
+    
+    a {
+        margin-left: 20px;
+    }
+
+    div.burger-menu{
+        display: none;
+    }
+
+    div.products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    article.products{
+        display: flex;
+        width: 48%;
+    }
+
+    main section article .descripcion{
+        display: block;
+    }
+
+    main section article .descripcion:hover{
+        display: block;
+    }
+
+    
+}
+
+@media (min-width: 769px) {
+
+    article.products {
+        width: 24%;
+    }
+    .main-footer {
+        padding: 40px 0;
+    }
+
+    .footer {
+        width: 95%;
+        margin: auto;
+    }
+
+    .footer i {
+        color: var(--celeste);
+        font-size: 2.5em;
+    }
+
+    .footer h2 {
+        color: var(--grisoscuro);
+        font-size: 2em;
+        font-weight: 400;
+    }
+
+    .footer p {
+        color: var(--grisoscuro);
+        font-size: 1.2em;
+        font-weight: 300;
+    }
+
+    .footer i:hover {
+        color: var(--verde);
+    }
+}
