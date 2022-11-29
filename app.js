@@ -4,8 +4,7 @@ const path = require('path');
 const home = "./views/home.html";
 const login = "./views/login.html";
 const register = "./views/register.html";
-
-let PORT = 3030;
+const PORT = proccess.env.PORT || 3001;
 
 app.use(express.static('public'));
 
